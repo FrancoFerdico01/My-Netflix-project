@@ -1,0 +1,47 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding: 0 30px;
+  /*margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;*/
+  height: 75px;
+}
+.img {
+  height: 75px;
+  width: 180px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.btn-abbonati {
+  background-color: #e40914;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 4px;
+  width: 180px;
+}
+.btn-accedi {
+  background-color: black;
+  border-radius: 2px;
+
+  border-color: white;
+  border-width: 1px;
+  color: white;
+  padding: 4px;
+  width: 140px;
+}
+.div-login{
+overflow-y: hidden;
+height: 100vh;
+}
