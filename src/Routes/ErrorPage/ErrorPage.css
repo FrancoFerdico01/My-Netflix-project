@@ -1,0 +1,33 @@
+.ErrorPage{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 665px;
+    height: 150px;
+    width: 580px;
+}
+.ErrorContent h1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+}
+.ErrorContent p{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.ErrorContent button{
+    margin-top: 30px;
+    margin-left: 871px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+
+}

@@ -1,19 +1,15 @@
-
-.App {
+.App{
   min-height: 100vh;
-  
 }
-.main-content{
+.main-content {
   padding-left: 40px;
 }
-.title{
-  margin-top: 200px; 
- 
-  
+.title {
+  margin-top: 200px;
+  font-size: 50px;
 }
 .p-app {
   margin-top: 5px;
-
 }
 .link {
   color: white;

@@ -1,0 +1,26 @@
+.Trailer {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.578);
+  z-index: 6;
+}
+
+.dialog-trailer {
+  width: 50%;
+  position: fixed;
+  left: 50%;
+  border: none;
+  border-radius: 5px;
+  height: 50%;
+  background-color: #161616;
+  transform: translateX(-50%);
+}
+.trailer-video {
+  height: 100%;
+  width: 100%;
+}

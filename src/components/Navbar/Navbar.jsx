@@ -1,10 +1,15 @@
 import "./Navbar.css";
-
 import { useState } from "react";
-import Login from "../Login";
+import Login from "../Login/Login";
+import { useNavigate, Link } from "react-router-dom";
 
 function Navbar() {
   const [dialog, setDialog] = useState(false);
+  const navigate = useNavigate();
+
+  function navigateHandler() {
+    navigate("/abbonati");
+  }
 
   function handleclick() {
     setDialog(true);
@@ -12,17 +17,22 @@ function Navbar() {
 
   return (
     <>
-      {dialog && <Login />}
-      <nav className="navbar">
+      {dialog && <Login setDialog={setDialog} />}
+
+      <nav className="Navbar">
         <img
-          src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png"
-          className="img"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+          className="logo"
         ></img>
 
         <div className="buttons">
-          <p className="p">SERIE TV E FILM SENZA LIMITI</p>
-          <button className="btn-abbonati"> ABBONATI ORA</button>
-          <button onClick={handleclick} className="btn-accedi">
+          <p>SERIE TV E FILM SENZA LIMITI</p>
+          <Link>
+            <button onClick={navigateHandler} className="btn-subscript">
+              ABBONATI ORA
+            </button>
+          </Link>
+          <button onClick={handleclick} className="btn-login">
             ACCEDI
           </button>
         </div>

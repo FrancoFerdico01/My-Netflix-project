@@ -3,23 +3,21 @@
   top: 0;
   height: 100vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.578);
-  
+  z-index: 6;
 }
 
 .dialog {
   position: fixed;
-  left: 50%;
+  inset: 0;
+  margin: auto;
   border: none;
   border-radius: 5px;
   height: 50%;
   background-color: #161616;
   opacity: 0.9;
   padding: 50px;
-  transform: translateX(-50%);
+  z-index: 9;
 }
 
 .dialog h2 {
@@ -34,12 +32,21 @@
 .dialog input {
   color: white;
   background-color: #161616;
-  border-color: white;
+  border: 1px solid white;
   border-radius: 5px;
   padding: 10px;
   width: 100%;
 }
-.dialog button {
+ .dialog input.active-false{
+  border: 3px solid red;
+ }
+
+ .dialog input.active-true{
+  border: 3px solid green;
+ }
+
+
+.btn-ok {
   color: white;
   margin-top: 15px;
   background-color: red;
@@ -48,18 +55,25 @@
   border: none;
   border-radius: 2px;
   border-width: 0px;
-}
-/*.dialog p {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
   cursor: pointer;
-}*/
-.dialog a{
+}
+
+.btn-back {
+  background-color: #161616;
+  margin-top: 15px;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.dialog a {
   display: block;
   color: white;
   text-align: center;
   margin-top: 20px;
   cursor: pointer;
-
 }

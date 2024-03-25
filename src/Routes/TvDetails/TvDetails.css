@@ -1,0 +1,64 @@
+.TvDetails {
+  position: relative;
+  background: rgb(3, 3, 3);
+}
+
+.gradient {
+  position: absolute;
+  background: rgb(3, 3, 3);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 3, 3, 1) 18%,
+    rgba(11, 11, 11, 1) 28%,
+    rgba(39, 39, 40, 0) 76%
+  );
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.TvDetails img {
+  position: relative;
+  margin-left: 330px;
+  margin-top: 75px;
+  width: 84%;
+  z-index: 1;
+}
+
+.TvDetails-text {
+  margin-left: 40px;
+  position: absolute;
+  top: 45%;
+  z-index: 3;
+  gap: 15px;
+  width: 1000px;
+}
+.btn-home {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 5px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-trailer {
+  margin-left: 20px;
+  padding: 5px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.TvDetails-title {
+  color: hsl(0deg 0.95% 58.82%);
+  display: inline;
+}
+
+.TvDetails-genres {
+  color: hsl(0deg 0.95% 58.82%);
+  display: inline;
+}
